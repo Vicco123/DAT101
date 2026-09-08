@@ -60,7 +60,11 @@ let USD = 8.6/76;
 let Dollar = dollaramount * USD;
 let Kroner = dollaramount * NOK;
 
+let nokamount = 54;
+let Dollar2 = nokamount * USD;
+let Kroner2 = nokamount * NOK;
 printOut(Math.floor(dollaramount) + " dollars is equivalent to " + Math.floor(Kroner) + " kroners.");
+printOut(Math.floor(nokamount) + " kroner is equivalent to " + Dollar2.toFixed(2) + " dollars.");
 printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
