@@ -122,5 +122,5 @@ printOut("--- Part 10 ----------------------------------------------------------
 let part10days = 131;
 let weeks = Math.floor(part10days / 7);
 let days = 131 % 7;
-printOut(weeks + days + " days. (" + weeks + " days and " + "days + " + days + " days)"); 
+printOut(weeks + days + " days. (" + weeks + " days and " + " + " + days + " days)"); 
 printOut(newLine);
