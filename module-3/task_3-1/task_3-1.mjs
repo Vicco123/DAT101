@@ -112,6 +112,7 @@ switch(monthName){
     case "February":
         printOut(monthName + " has 28 days");
         break;
+        
     case "April":
     case "Juni":
     case "September":
@@ -127,6 +128,7 @@ switch(monthName){
     case "October":
     case "December":
         printOut(monthName + " has 31 days");
+        break;
 }
         */
 printOut(newLine);
@@ -166,5 +168,6 @@ switch(monthName){
     case "November":
     case "December":
         printOut(monthName + ": The gallery is open");
+        break;
 }
         */
