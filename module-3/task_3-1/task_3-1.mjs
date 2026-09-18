@@ -11,13 +11,13 @@ else if (klokke == 8){
     printOut("If I wake up at exactly " + klokke + " o'clock, I can take the train to school.");
 }
 else{
-    printOut("I have to take the car to school.")
+    printOut("I have to take the car to school.");
 }
 printOut(newLine);
 
 printOut("--- Part 4, 5 --------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-let int = 0
+let int = 0;
 if (int > 0){
     printOut("Positive");
 }
@@ -25,7 +25,7 @@ else if (int == 0){
     printOut("Zero");
 }
 else{
-    printOut("Negative")
+    printOut("Negative");
 }
 printOut(newLine);
 
