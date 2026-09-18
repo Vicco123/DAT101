@@ -6,7 +6,7 @@ printOut("--- Part 1, 2, 3 -----------------------------------------------------
 let klokke = 7;
 if (klokke == 7){
     printOut("If I wake up at exactly " + klokke  + " o'clock then I can take the bus to school.");
-}
+} 
 else if (klokke == 8){
     printOut("If I wake up at exactly " + klokke + " o'clock, I can take the train to school.");
 }
@@ -70,8 +70,28 @@ if(monthName.includes("r")){
 else{
     printOut("You do not need to take vitamin D");
 }
+/* switch-case besvarelse:
+switch(monthName){
+    case "January":
+    case "February":
+    case "Mars":
+    case "April":
+    case "September":
+    case "October":
+    case "November":
+    case "December":
+    printOut("You must take vitamin D");
+    break;
 
-
+    case "Mai":
+    case "Juni":
+    case "Juli":
+    case "August":
+    printOut("You do not need to take vitamin D");
+    break;
+    
+}
+    */
 printOut(newLine);
 
 printOut("--- Part 9 ----------------------------------------------------------------------------------------------");
@@ -87,6 +107,28 @@ else if (monthName == "April" || monthName == "Juni" ||
 else{
     printOut(monthName + " has 31 days");
 }
+/* switch-case besvarelse:
+switch(monthName){
+    case "February":
+        printOut(monthName + " has 28 days");
+        break;
+    case "April":
+    case "Juni":
+    case "September":
+    case "November":
+        printOut(monthName + " has 30 days");
+        break;
+
+    case "January":
+    case "Mars":
+    case "Mai":
+    case "Juli":
+    case "August":
+    case "October":
+    case "December":
+        printOut(monthName + " has 31 days");
+}
+        */
 printOut(newLine);
 
 printOut("--- Part 10 ---------------------------------------------------------------------------------------------");
@@ -102,3 +144,27 @@ else{
     printOut(monthName + ": The gallery is open");
 }
 printOut(newLine);
+
+/* switch-case besvarelse:
+switch(monthName){
+    case "April":
+        printOut(monthName + ": We have temporary premises in the building next door");
+        break;
+
+    case "Mars":
+    case "Mai":
+        printOut(monthName + ": The gallery is closed");
+        break;
+
+    case "January":
+    case "February":
+    case "Juni":
+    case "Juli":
+    case "August":
+    case "September":
+    case "October":
+    case "November":
+    case "December":
+        printOut(monthName + ": The gallery is open");
+}
+        */
