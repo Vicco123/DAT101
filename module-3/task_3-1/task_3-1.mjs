@@ -17,7 +17,7 @@ printOut(newLine);
 
 printOut("--- Part 4, 5 --------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-let int = 0;
+const int = 0;
 if (int > 0){
     printOut("Positive");
 }
@@ -31,7 +31,7 @@ printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-let img = Math.floor(Math.random() * 8) + 1;
+const img = Math.floor(Math.random() * 8) + 1;
 printOut("Image size: " + img);
 if (img >= 4){
     printOut("Thank you");
