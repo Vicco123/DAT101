@@ -10,8 +10,31 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li><b>In part 1, is it possible to solve the problem using a single "for" loop?</b></li>
+      <p>
+        Yes it is. In my solution I used a single for loop with two variables (i and j) to count up and down at the same time. 
+        This allowed me to solve the task without using multiple loops.
+      </p>
+      <li><b>In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop?</li>
+      Describe what would or would not be necessary to achieve this. Provide a thorough explanation of your answer.</b>
+      <p>
+        We can make a infinite loop using while(true), because the condition is always true. The loop would then need a break statement to stop.
+        An infinite loop needs a way to exit, otherwise it will run forever. In my code I used while(number !== 45), 
+        which automatically stops when the correct number is found, so a break was not necessary.
+      </p>
+      <li><b>Discuss briefly how quickly or slowly a computer might be able to compute this, considering the number of guesses and the time it takes.</li>
+      How does the program behave while it is guessing? Can the program perform other tasks concurrently?</b>
+      <p>
+        The computer can perform these calculations very quickly. As long as the number of guesses is not excessively large, it usually finishes within a few milliseconds.
+        While the program is guessing, it repeatedly generates random numbers and checks if they match the target value. 
+        The program focuses on this task until the loop finishes before continuing to the next instruction.
+      </p>
+      <li><b>Explain the relationship between rows and columns in nested "for" loops.</li>
+      Can we, for instance, change the order, considering rows to be innermost or columns to be innermost, or does this not matter?</b>
+      <p>
+        I used rows as the outer loop and columns as the inner loop. For each row, the program goes through all columns before moving to the next row.
+        Yes, the order can be changed. The same combinations will be produced, but they will be processed and printed in a different order.
+      </p>
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
