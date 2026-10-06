@@ -18,7 +18,7 @@ printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-let number = 100;
+let number = 0;
 while (number !== 45) {
   number = Math.floor(Math.random() * 60) + 1;
 }
@@ -35,43 +35,44 @@ while (number2 !== 456789) {
   number2 = Math.floor(Math.random() * 1000000) + 1;
   count++;
 }
+let endtime = Date.now();
 printOut("The number is " + number2);
-printOut("Time taken: " + (Date.now() - startTime) + " milliseconds");
+printOut("Time taken: " + (endtime - startTime) + " milliseconds");
 printOut("Number of guesses: " + count);
 
 printOut(newLine);
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/ 
-let br = " ";
+let linje = " ";
 count = 0;
 
 for (let tall = 2; tall <= 200; tall++) {
-    let divi = 2;
+    let prime = 2;
     let count2 = 0;
 
-    while (divi < tall) {
-        count2 += tall % divi === 0;
-        divi ++;
+    while (prime < tall) {
+        count2 += tall % prime === 0;
+        prime ++;
     }
 
     if (count2 === 0) {
-        br += tall + " ";
+        linje += tall + " ";
         count++;
         
       if (count % 25 === 0) {
-          br += "<br>";
+          linje += "<br>";
         }
     } 
 }
-printOut(br); 
+printOut(linje); 
 
 printOut(newLine);
 
 printOut("--- Part 5 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
 for (let row = 1; row <= 7; row++) {
-    let line = "";
+    let line = " ";
 
     for (let col = 1; col <= 9; col++) {
         line += "K" + col + "R" + row + " ";
