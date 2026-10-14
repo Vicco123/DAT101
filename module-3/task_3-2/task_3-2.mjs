@@ -51,16 +51,16 @@ for (let tall = 2; tall <= 200; tall++) {
     let prime = 2;
     let count2 = 0;
 
-    while (prime < tall) {
+    while (prime < tall) {      // Sjekk om tallet er et primtall
         count2 += tall % prime === 0;
         prime ++;
     }
 
-    if (count2 === 0) {
+    if (count2 === 0) {     // Hvis tallet er et primtall, legg det til i linjen
         linje += tall + " ";
         count++;
         
-      if (count % 25 === 0) {
+      if (count % 25 === 0) { // Hvis vi har skrevet ut 25 primtall, legg til en linjeskift
           linje += "<br>";
         }
     } 
@@ -98,7 +98,7 @@ for (let student = 1; student <= 5; student++) {
 
   let grade = "";
 
-  if (prosent >= 89) {
+  if (prosent >= 89) {  
     grade = "A";
     antallA++;
   } else if (prosent >= 77) {
@@ -123,9 +123,11 @@ for (let student = 1; student <= 5; student++) {
   printOut(newLine);
   printOut("Sorted grades A - F:")
 
+
+  //sortering av karakterer
 let teller = 0;
 do {
-  if (antallA > 0) printOut("A");
+  if (antallA > 0) printOut("A"); 
   teller++;
 } while (teller < antallA);
 
@@ -165,17 +167,19 @@ printOut(newLine);
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
 let throws = 0;
-
+//definerer variabler for å holde styr på om vi har funnet de forskjellige kombinasjonene
 let straightFound = false;
 let pairsFound = false;
 let towerFound = false;
 let yahtzeeFound = false;
 
+//definerer variabler for å holde styr på antall kast det tok å finne de forskjellige kombinasjonene
 let straightThrows = 0;
 let pairsThrows = 0;
 let towerThrows = 0;
 let yahtzeeThrows = 0;
 
+//while-løkke som fortsetter til vi har funnet alle kombinasjonene
 while (!straightFound || !pairsFound || !towerFound || !yahtzeeFound) {
 
     throws++;
@@ -231,6 +235,7 @@ while (!straightFound || !pairsFound || !towerFound || !yahtzeeFound) {
     if (t5 === 6) a6++;
     if (t6 === 6) a6++;
 
+    // Sjekker for kombinasjoner
     // FULL STRAIGHT
     if (!straightFound &&
         a1 === 1 && a2 === 1 && a3 === 1 &&
@@ -296,7 +301,7 @@ while (!straightFound || !pairsFound || !towerFound || !yahtzeeFound) {
         towerFound = true;
         towerThrows = throws;
 
-        printOut(`${t1},${t2},${t3},${t4},${t5},${t6}`);
+        printOut(`${t1},${t2},${t3},${t4},${t5},${t6}`);   //skriver ut terningkastene
         printOut("Tower");
         printOut("Found on throw " + throws + "!<br>");
     }
