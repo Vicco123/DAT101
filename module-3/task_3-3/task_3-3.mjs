@@ -210,13 +210,11 @@ function expression(lines) {
             return;
         }
 
-        // Skriver ut radene med riktig formatering
-        printOut(left.padEnd(30, "\u00A0") + "=" + right.padStart(25, "\u00A0") + "\n");
     }
     printOut("Maths fun!");
 }
 
-expression(7);
+expression(200);
 
 printOut(newLine);
 
