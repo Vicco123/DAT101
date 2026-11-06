@@ -144,22 +144,22 @@ function calculateSpeed(speed, distance, time){
     time = distance / speed;
 
   } else {
-    printOut("Speed = " + speed + " km/h");
-    printOut("Distance = " + distance + " km");
+    printOut("Speed = " + Math.ceil(speed) + " km/h");
+    printOut("Distance = " + Math.ceil(distance) + " km");
     printOut("Time = " + time + " h");
     return NaN; 
   }
-    printOut("Speed = " + speed + " km/h");
-    printOut("Distance = " + distance + "km");
+    printOut("Speed = " + Math.ceil(speed) + " km/h");
+    printOut("Distance = " + Math.ceil(distance) + "km");
     printOut("Time = " + time.toFixed(2) + " h");
     printOut(newLine);
 
     return { speed, distance, time };
 }
-calculateSpeed(undefined, 500, 10);
-calculateSpeed(50, undefined, 20);
-calculateSpeed(30, 200, undefined);
-calculateSpeed(undefined, 100, undefined);
+calculateSpeed(undefined, 50, 0.67);
+calculateSpeed(60, undefined, 2);
+calculateSpeed(70, 105, undefined);
+calculateSpeed(undefined, 50, undefined);
 
 printOut(newLine);
 
